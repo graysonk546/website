@@ -84,6 +84,7 @@
 {
     transition: all 0.3s ease;
     color: #56b6c2;
+    margin-top: -1px;
 }
 
 .button 
@@ -120,9 +121,12 @@
 }
 #about
 {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
     order: 2;
-    width: 1000px;
-    height: 750px;
+    width: 900;
+    height: 1250px;
     background: #282c34;
 }
 
@@ -135,7 +139,7 @@
     height: 80px;
     z-index: 1;
     height: 750px;
-    width: 1000px;
+    width: 900;
     margin: 0 auto;
     padding: 0px 20px;
 }
@@ -183,17 +187,19 @@
     /* position: fixed; */
     text-align: center;
     background-color: #282c34;
-    color: #fff;
+    /* color: #fff; */
     flex-basis: 100px;
     position: sticky;
     top: 20.5rem;
     padding: 20px 20px;
     border-left: 2px solid #282c34;
     height: 250px;
+    width: 12.5%;
 }
 
 #image_container_left
 {   
+    flex: 1;
     order: 1;
     /* position: fixed; */
     text-align: left;
@@ -232,21 +238,23 @@
 
 #links
 {
+    flex: 2;
     display: inline-flex;
     position: sticky;
     justify-content: space-around;
     align-items: flex-start;
     top: 20.5rem;
     background-color: #282c34;
+    width: 25%;
+    height: 250px;
 }
 
 #email
 {
     color: #abb2bf;
-    /* height: 83px; */
     background-color: #282c34;
     text-align: right;
-    padding: 20px;
+    padding: 15px;
 }
 
 #email:hover
@@ -258,10 +266,9 @@
 #twitter
 {
     color: #abb2bf;
-    /* height: 83px; */
     background-color: #282c34;
     text-align: right;
-    padding: 20px;
+    padding: 15px;
 }
 
 #twitter:hover
@@ -273,10 +280,11 @@
 #linkedin
 {
     color: #abb2bf;
-    /* height: 83px; */
     background-color: #282c34;
     text-align: right;
-    padding: 20px;
+    padding: 15px;
+    text-align: right;
+    font-size: 20px;
 }
 
 #linkedin:hover
@@ -287,8 +295,32 @@
 
 #icons
 {
+    flex: 20;
     position: sticky;
     top: 20.5rem;
     height: 250px;
     display: vertical;
+}
+
+ion-icon {
+    font-size: 28px;
+    --ionicon-stroke-width: 32px;
+}
+#headshot_container
+{
+    width: 100%;
+    background-color: #282c34;
+    display: flex;
+}
+
+#headshot
+{
+    width: 240px;
+    height: 240px;
+    position: center;
+    background-color: #282c34;
+    /* border-style: solid; */
+    /* border-width: 8px; */
+    border-color: #d19a66; 
+    border-radius: 160px;
 }
