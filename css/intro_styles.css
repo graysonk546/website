@@ -1,0 +1,151 @@
+
+#intro
+{
+    background-color: white;
+    width: 100%;
+    height: 1400px;
+    display: grid;
+    grid-template-columns: 23% 60% 17%;
+    margin-bottom: 200px;
+}
+
+#front-page-container
+{
+    position: relative;
+    top: 200px;
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#front-page-container h1
+{
+    font-family: "lato";
+    font-size: 100px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+#front-page-container h2
+{
+    font-family: "lato";
+    font-weight: thin;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+#front-page-container p
+{
+    font-family: "lato";
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+#about-container
+{
+    position: relative;
+    top: 600px;
+    /* height: 400px; */
+    /* width: 100%; */
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+
+    /* display: grid;
+    grid-template-rows: 25% 75%; */
+    align-items: left;
+}
+
+#about-title
+{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#about-title h1
+{
+    font-size: 50px;
+    margin-left: 100px;
+    font-family: "lato";
+}
+
+#about-content-container
+{
+    background-color: gray;
+    /* width: 100%; */
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 40px;
+    /* display: grid; */
+    /* grid-template-columns: 70% 30%; */
+    /* align-items: top; */
+}
+
+#about-image
+{
+    height: 250px;
+    /* width: 250px; */
+    /* width: 200px; */
+    background-color: lightgreen;
+    justify-self: center;
+    /* width: 250px; */
+    min-width: 250px;
+    max-width: 250px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    border-radius: 125px;
+    flex: 3;
+}
+
+#about-content
+{
+    width: 200px;
+    flex: 5;
+    background-color: lightblue;
+    min-width: 400px;
+    max-width: 450px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    border-radius: 8px;
+    /* margin-left: 40px; */
+    /* margin-bottom: 40px; */
+}
+
+#about-content p
+{
+    font-family: "lato";
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#link-container
+{
+    width: 100px;
+    height: 400px;
+    position: sticky;
+    left: 100%;
+    top: 280px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 80px 20px;
+    align-items: center;
+}
+
+.icon-container
+{
+    width: 30px;
+    height: 250px;
+    background-color: black;
+    justify-self: right;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    align-items: center;
+}
