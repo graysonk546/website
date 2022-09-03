@@ -1,0 +1,44 @@
+
+#contact-section
+{
+    scroll-margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 300px;
+}
+
+#contact
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-content
+{
+    margin-right: 40px;
+    /* height: 200px; */
+    min-height: 100px;
+    max-height: fit-content;
+    background-color: #202737;
+    box-shadow: 0px 0px 20px #000000;
+    border-radius: 8px;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+#contact-content p
+{
+    /* padding: 10px; */
+    background-color: #202737;
+    color: #abb2bf;
+}
+
+#contact-link
+{
+    text-align: center;
+}
+
+

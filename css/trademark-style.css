@@ -1,0 +1,22 @@
+
+#trademark-section
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#trademark-section p
+{
+    color: #abb2bf;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* font-weight: bold; */
+}
+
+.trademark
+{
+    margin-right: 0px;
+}
