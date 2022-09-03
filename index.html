@@ -4,20 +4,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Document </title>
-        <link rel="stylesheet" href="about_styles.css"/>
-        <link rel="stylesheet" href="css/intro_styles.css"/>
-        <link rel="stylesheet" href="css/projects_styles.css"/>
-        <link rel="stylesheet" href="css/experience_styles.css"/>
-        <link rel="stylesheet" href="css/general_styles.css"/>
+        <title> Grayson King </title>
+        <link rel="stylesheet" href="css/general-style.css"/>
+        <link rel="stylesheet" href="css/nav-style.css"/>
+        <link rel="stylesheet" href="css/intro-style.css"/>
+        <link rel="stylesheet" href="css/project-style.css"/>
+        <link rel="stylesheet" href="css/experience-style.css"/>
+        <link rel="stylesheet" href="css/contact-style.css"/>
+        <link rel="stylesheet" href="css/trademark-style.css"/>
     </head>    
 
     <body>
-        <!--------------------------NAVIGATION LINKS--------------------------->
+        <!---------------------------NAVIGATION BAR---------------------------->
         <nav class="navbar">
             <!-- nav bar container -->
-            <div class="navbar_container">
-                <a href="/" id="navbar_logo"> grayson_king </a>
+            <div class="navbar_container fade-in">
+                <a href="#intro-section" id="navbar_logo"> grayson-king-profile </a>
                 <!-- mobile navbar -->
                 <div class="navbar_toggle" id="mobile-menu"> 
                     <span class="bar"> </span>
@@ -27,280 +29,663 @@
                 <!-- desktop navbar -->
                 <ul class="navbar_menu">
                     <li class="navbar_item">
-                        <a href="/" class="navbar_links">About</a>
+                        <a href="#about-title" class="navbar_links">About</a>
                     </li>
                     <li class="navbar_item">
-                        <a href="/" class="navbar_links">Experience</a>
+                        <a href="#projects-section" class="navbar_links">Projects</a>
                     </li>
                     <li class="navbar_item">
-                        <a href="/" class="navbar_links">Projects</a>
+                        <a href="#experience-section" class="navbar_links">Experience</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#contact-section" class="navbar_links">Contact</a>
                     </li>
                     <li class="navbar_btn">
-                        <a href="/" class="button">Resume</a>
+                        <a href="./documents/resume-software.pdf" class="button">Resume</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <!------------------------------TESTING-------------------------------->
-        <div id="intro">
-            <div class="links-left">
-                <div id="link-container">
-                    <div class="icon-container">
-                        <div class="icon">
+        <!---------------------------INTRO SECTION----------------------------->
+        <section id="intro-section">
+            <!-- flex box with divisions left, right, center -->
+            <div class="left">
+                <!-- container for left side content -->
+                <div id="intro-links-container" class="fade-in">
+                    <!-- container to apply offset with margin-top -->
+                    <div id="intro-links">
+                        <div class="link-icons-container">
+                            <a href="https://github.com/graysonk546">
+                                <div class="link-icon" id="github">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/grayson-king-9b6924192/">
+                                <div class="link-icon" id="linkedin">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </div>
+                            </a>
+                            <div class="link-icon" id="mail">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            <div class="link-icon" id="darkmode">
+                                <ion-icon name="contrast-outline"></ion-icon>
+                            </div>
                         </div>
-                        <div class="icon">
+                        <div class="vertical-line">
                         </div>
-                        <div class="icon">
-                        </div>
-                        <div class="icon">
-                        </div>
-                    </div>
-                    <div class="vertical-line">
                     </div>
                 </div>
             </div>
-            <div class="main">
-                <div id="front-page-container">
-                    <h2>Hey there, I am</h2>
-                    <h1>Grayson King.</h1>
+            <div class="center">
+                <!-- container for center content-->
+                <div id="intro-content-container" class="fade-in">
+                    <h2> Hi there, I am </h2>
+                    <h1> Grayson King. </h1>
+
                     <p>
-                        Introductory information about me and<br>
-                        and things that people should know can<br>
-                        be placed right here, under my name.
+                        I study Engineering Physics and I aspire to work <br>
+                        in robotics. I am currently looking for internship <br>
+                        positions starting Summer '23!
                     </p>
                 </div>
-                <div id="about-container">
-                    <div id="about-title">
-                        <h1>About Me</h1>
+                <div id="about-container" class="fade-in">
+                    <div id="about-content">
+                        <div id="about-title">
+                            <h2> About Me </h2>
+                        </div>
+                        <div id="about-description">
+                            <p>
+                                Welcome to my custom personal website! You can 
+                                checkout out the source code <a href="https://github.com/graysonk546/website" class="link">here</a>.
+                            </p>
+                            <p>
+                                UBC <a href="https://www.engphys.ubc.ca/" class="link">Engineering Physics</a> 
+                                is a multi-disciplinary program that
+                                equips students with a solid base in <mark class="highlight">electrical</mark>, 
+                                <mark class="highlight">mechanical</mark>, and 
+                                <mark class="highlight">software</mark> 
+                                engineering. This program has cultivated in me a 
+                                fascination with systems that seek to combine 
+                                these disciplines.
+                            </p>
+                            <p>
+                                My interest in <mark class="highlight">robotics</mark> 
+                                comes as a natural extension of this 
+                                fascination. The projects I take on and the work
+                                experience I have accumulated at <a href="https://www.intel.com" class="link">Intel</a>
+                                and <a href="https://www.generac.com/for-homeowners/clean-energy/clean-energy" class="link">Generac</a> 
+                                support my goal of developing robotic systems to 
+                                solve tough, <mark class="highlight">real-world</mark> 
+                                problems.
+                            </p>
+                            <p>
+                                In my free time I enjoy being outdoors
+                                and forwarding my technical skills. Over the 
+                                summer I have spent a lot of time running,
+                                skateboarding and biking. I have also been 
+                                working on my current personal project: a can 
+                                stacking robot!
+                            </p>    
+                        </div>
                     </div>
-                    <div id="about-content-container">
-                        <div id="about-content">
-                            <p>
-                                Paragraph describing myself and the things that
-                                I am interested
-                                in. For example, I may opt to talk about my
-                                passion for robotics here. Or maybe things that 
-                                I like the do on the weekend.
-                            </p>
-                            <p>
-                                Paragraph describing myself and the things that
-                                I am interested
-                                in. For example, I may opt to talk about my
-                                passion for robotics here. Or maybe things that 
-                                I like the do on the weekend.
-                            </p>
-                            <p>
-                                Paragraph describing myself and the things that
-                                I am interested
-                                in. For example, I may opt to talk about my
-                                passion for robotics here. Or maybe things that 
-                                I like the do on the weekend.
-                            </p>
-                        </div>
-                        <div id="about-image">
-                        </div>
+                    <div id="about-image">
+                        <img class="image" src="pictures/headshot-main.png">
+                        </img>
                     </div>
                 </div>
             </div>
-            <div class="links-right">
+            <div class="right">
+                <!-- container for right side content -->
             </div>
-        </div>
+        </section>
 
-        <div id="projects">
-            <div class="links-left">
-                <div class="resource-container">
-                    <div class="resource">
-                        <div class="resource-links-container">
-                            <div class="icon">
-                            </div>
-                            <div class="icon">
-                            </div>
-                            <div class="icon">
-                            </div>
-                            <div class="technologies">
-                                <p> 
-                                    C<br>Python<br>STM32
-                                </p>
-                            </div>
-                        </div>
-                        <div class="vertical-line">
-                        </div>
-                    </div>
-                    <div class="resource">
-                        <div class="resource-links-container">
-                            <div class="icon">
-                            </div>
-                            <div class="icon">
-                            </div>
-                            <div class="icon">
-                            </div>
-                            <div class="technologies">
-                                <p> 
-                                    Python<br>TensorFlow<br>Linux
-                                </p>
-                            </div>
-                        </div>
-                        <div class="vertical-line">
-                        </div>
-                    </div>
-                    <div class="resource">
-                        <div class="resource-links-container">
-                            <div class="icon">
-                            </div>
-                            <div class="icon">
-                            </div>
-                            <div class="icon">
-                            </div>
-                            <div class="technologies">
-                                <p> 
-                                    C<br>Python<br>STM32
-                                </p>
-                            </div>
-                        </div>
-                        <div class="vertical-line">
-                        </div>
-                    </div>
+        <!-------------------------PROJECTS SECTION---------------------------->
+        <section id="projects-section">
+            <div class="section-title fade-in">
+                <h1>Projects</h1>
+                <div class="horizontal-line">
                 </div>
             </div>
-            <div class="main">
-                <div class="section-header">
-                    <h1>Projects</h1>
-                    <div class="horizontal-line"></div>
-                </div>
-                <div class="project-container">
-                    <div class="project">
-                        <div class="project-media-container">
-                        </div>
-                        <div class="project-content-container">
-                            <div class="project-title">
-                            </div>
-                            <div class="project-description">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                    </div>
-                    <div class="project">
-                    </div>
-                </div>
-            </div>
-            <div class="links-right">
-            </div>
-        </div>
-
-        <div id="experience">
-            <div class="links-left">
-            </div>
-            <div class="main">
-                <div class="section-header">
-                    <h1>Experience</h1>
-                    <div class="horizontal-line"></div>
-                </div>
-                <div class="exerience-container">
-                    <div class="experience">
-                        <div class="experience-details">
-                        </div>
-                        <div class="experience-description">
-                        </div>
-                        <div class="experience-tools">
-                        </div>
-                    </div>
-                    <div class="experience">
-                    </div>
-                </div>
-            </div>
-            <div class="links-right">
-            </div>
-        </div>
-
-        <!-------------------------------ABOUT--------------------------------->
-        <div id="front_page">
-            <div id="about">
-                <div id="main">
-                    <div class="about_container">
-                        <div class="about_content">
-                            <h2>Hey there, I am</h2>
-                            <h1>Grayson King.</h1>
-                            <p>
-                                Introductory information about me and<br>
-                                and things that people should know can<br>
-                                be placed right here, under my name.
-                            </p>
-                        </div>
-                    </div>
-                    <div id="more_info_container">
-                        <div id="more_info_content_1">
-                            <div id="title_stack">
-                                <h2> About Me </h2> 
-                                <div id="about_info"> 
+            <div id="projects" class="fade-in fade-in-up">
+                <div class="left" id="projects-left">
+                    <div id="projects-links-container">
+                        <div id="projects-links">
+                            <div class="link-icons-container">
+                                <a href="https://github.com/">
+                                    <div class="link-icon" id="github">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://cad.onshape.com/documents/e91bbfa5ded47df826b1cfbb/">
+                                    <div class="link-icon" id="onshape">
+                                        <ion-icon name="cog-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCin1Jl61J4hWm51TLP9yH7Q">
+                                    <div class="link-icon" id="video">
+                                        <ion-icon name="videocam-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <div class="link-icon" id="blank">
                                     <p>
-                                        Here is a sample of text that might go in this one<br>
-                                        this box. For <mark class="blue">example</mark> here is a thing that is in<br>
-                                        the box. More sample text to get an understanding <br>
-                                        of spacing.
-                                        <br>
-                                        <br>
-                                        More text goes here. Information about work<br>
-                                        experience, passions, <mark class="purple">graduation</mark> year and <br>
-                                        more test text here that is meant to hold space.<br>
-                                        Here's some more text what is this a thing that<br>
-                                        more here that is that what is the even thing<br>
-                                    
-
+                                        <a href="https://www.onshape.com/en/" class="link text tech-font">Onshape</a><br>
+                                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="link text tech-font">C</a><br> 
+                                        <a href="https://www.python.org/" class="link text tech-font">Python</a><br>
+                                        <a href="https://www.st.com/en/" class="link text tech-font">STM32</a>
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div id="more_info_content_2">
-                            <img id="headshot" src="pictures/headshot-main.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="links">
-                <div id="links_vertical_line"> </div>
-                <div id="links_icons_container">
-                    <div id="links_icons">
-                        <div id="github">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </div>
-                        <div id="linkedin">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </div>
-                        <div id="email">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-                        <div id="dark_mode">
-                            <ion-icon name="contrast-outline"></ion-icon>
+                            <div class="vertical-line">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!----------------------------EXPERIENCE------------------------------->
-        <div class="experience">
-            <div class="experience_container">
-                <div class="experience_content">
-                    <h2>Technical Experience</h2>
-                    <p>
-                        Introductory information about me and<br>
-                        and things that people should know can<br>
-                        technical experiences can be placed here
-                    </p>
+                <div class="center">
+                    <div class="project-container" id="hopper">
+                        <div class="project-media">
+                            <img id="hopper-pic" src="pictures/hopper.png">
+                        </div>
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h2> Can Loading Hopper </h2>
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    The Can Loading Hopper is the can 
+                                    stacking and 
+                                    organizing
+                                    subsystem of a <mark class="highlight">wheeled</mark> 
+                                    can collecting robot. 
+                                    The purpose of the robot is to collect and 
+                                    position <mark class="highlight">6 horizontal</mark> 
+                                    drink cans so that they can be deposited <mark class="highlight">veritcally</mark>.
+                                </p>
+                                <p>
+                                    The hopper takes advantage of 
+                                    <a href="https://en.wikipedia.org/wiki/Coupling_rod" class="link">coupled</a> rotary motion 
+                                    to load cans, and implements a belt-driven 
+                                    linear slide 
+                                    to move cans vertically.
+                                </p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="right">
                 </div>
             </div>
-        </div>
+            <div id="projects" class="fade-in fade-in-up">
+                <div class="left" id="projects-left">
+                    <div id="projects-links-container">
+                        <div id="projects-links">
+                            <div class="link-icons-container">
+                                <a href="https://github.com/graysonk546">
+                                    <div class="link-icon" id="github">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="./documents/ml-project-paper.pdf">
+                                    <div class="link-icon" id="mail">
+                                        <ion-icon name="document-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=eLF6SspzXXc">
+                                    <div class="link-icon" id="video">
+                                        <ion-icon name="videocam-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <div class="link-icon" id="blank">
+                                    <p>
+                                        <a href="https://www.tensorflow.org/" class="link text tech-font">TensorFlow</a><br>
+                                        <a href="https://www.ros.org/" class="link text tech-font">ROS</a><br>
+                                        <a href="https://www.python.org/" class="link text tech-font">Python</a><br>
+                                        <a href="https://gazebosim.org/home" class="link text tech-font">Gazebo</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vertical-line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="project-container" id="ml-driving">
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h2> ML Autonomous Driving </h2>
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    The goal of this <mark class="highlight">autonomous</mark> driving project 
+                                    was to navigate a simulated road network 
+                                    while collecting and registering the 
+                                    <mark class="highlight">liscence plate</mark> codes of <mark class="highlight">8 parked cars</mark>.
+                                </p>
+                                <p>
+                                    The sole input to the agent vehicle was a 
+                                    front facing camera feed. A stack of <mark class="highlight">4
+                                    convolutional neural networks</mark> (<a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" class="link">CNN</a>) was used to 
+                                    solve the navigation and liscence plate 
+                                    prediction tasks.                                
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="project-media">
+                            <img id="enph353-pic" src="pictures/enph353.png">
+                        </div> 
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+            <div id="projects" class="fade-in fade-in-up">
+                <div class="left" id="projects-left">
+                    <div id="projects-links-container">
+                        <div id="projects-links">
+                            <div class="link-icons-container">
+                                <a href="https://github.com/graysonk546/ai-virtual-world-sim">
+                                    <div class="link-icon" id="github">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>   
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCin1Jl61J4hWm51TLP9yH7Q">
+                                    <div class="link-icon" id="video">
+                                        <ion-icon name="videocam-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <div class="link-icon" id="blank">
+                                    
+                                </div>
+                                <div class="link-icon" id="blank">
+                                    <p>
+                                        <a href="https://www.java.com/en/" class="link text tech-font">Java</a><br>
+                                        <a href="https://gradle.org/" class="link text tech-font">Graddle</a><br>
+                                        <a href="https://junit.org/junit5/" class="link text tech-font">JUnit</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vertical-line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="project-container" id="ai-sim"> 
+                        <div class="project-media">
+                            <img id="ai-sim-gif" src="pictures/ai-sim.gif">
+                        </div> 
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h2> AI Virtual World Sim </h2>
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    The goal of this simulated world project was
+                                    to visualize how <mark class="highlight">simple</mark> rules of interaction
+                                    between constituents of a system can evolve
+                                    into <mark class="highlight">complex</mark> behavior at a system-wide
+                                    scale. To achieve this, custom <mark class="highlight">AI</mark>, 
+                                    governing eating and navigation habits, 
+                                    was programmed for <mark class="highlight">6 characters</mark> (grass, cars, 
+                                    etc). 
+                                </p>
+                                <p>
+                                    An interesting characters to 
+                                    watch is <a href="https://www.pokemon.com/us/pokedex/charmander" class="link">Charmander</a>. With enough energy, it 
+                                    can evolve!
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+            <div id="projects" class="fade-in fade-in-up">
+                <div class="left" id="projects-left">
+                    <div id="projects-links-container">
+                        <div id="projects-links">
+                            <div class="link-icons-container">
+                                <a href="https://github.com/graysonk546/autonomous-can-collecting-robot">
+                                    <div class="link-icon" id="github">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="./documents/robot-summer-videos.pdf">
+                                    <div class="link-icon" id="mail">
+                                        <ion-icon name="document-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://cad.onshape.com/documents/d0648dd86cf1a40d6c79699e">
+                                    <div class="link-icon" id="mail">
+                                        <ion-icon name="cog-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <div class="link-icon" id="blank">
+                                    <p>
+                                        <a href="https://www.onshape.com/en/" class="link text tech-font">Onshape</a><br>
+                                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" class="link text tech-font">C</a><br>
+                                        <a href="https://www.python.org/" class="link text tech-font">Python</a><br>
+                                        <a href="https://www.st.com/en/" class="link text tech-font">STM32</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vertical-line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="project-container" id="ml-driving">
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h2> Can Collecting Robot V1</h2>
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    The goal with V1 of the can-collecting 
+                                    robot was to <mark class="highlight">autonomously</mark> navigate a 
+                                    competition surface, picking 
+                                    up horizontal drink cans along the way. 
+                                    At the end of the competition run, the cans 
+                                    were to be flipped vertically and 
+                                    dispensed in a <mark class="highlight">2x3 grid</mark> formation to a
+                                    precision of <mark class="highlight">±5mm</mark>.
+                                </p>
+                                <p>
+                                    To achieve this, our team opted for
+                                    encoded <mark class="highlight">rollers</mark>  as means of can intake, 
+                                    and a uni-axially rotating <mark class="highlight">hopper</mark> to 
+                                    position cans horizontally before flipping 
+                                    90° to dispense them.
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="project-media">
+                            <img id="robot-summer-pic" src="pictures/enph-253.gif">
+                        </div> 
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+            <div id="projects" class="fade-in fade-in-up">
+                <div class="left" id="projects-left">
+                    <div id="projects-links-container">
+                        <div id="projects-links">
+                            <div class="link-icons-container">
+                                <a href="https://github.com/graysonk546/optimized-jet-engine-cycle-sim">
+                                    <div class="link-icon" id="github">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="./documents/brayton-cycle-optimized.pdf">
+                                    <div class="link-icon" id="mail">
+                                        <ion-icon name="document-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/watch?v=BVNv9hQI2Bs">
+                                    <div class="link-icon" id="video">
+                                        <ion-icon name="videocam-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <div class="link-icon" id="blank">
+                                    <p>
+                                        <a href="https://jupyter.org/" class="link text tech-font">Jupyter</a><br>
+                                        <a href="https://www.python.org/" class="link text tech-font">Python</a><br>
+                                        <a href="https://numpy.org/" class="link text tech-font">NumPy</a><br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vertical-line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="project-container" id="ai-sim"> 
+                        <div class="project-media">
+                            <img id="brayton-cycle-gif" src="pictures/brayton-cycle.gif">
+                        </div> 
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h2> Optimized Engine Cycle </h2>
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    The <a href="https://en.wikipedia.org/wiki/Brayton_cycle" class="link">Brayton Cycle</a> 
+                                    is the <mark class="highlight">thermodynamic</mark> 
+                                    process behind the operation of many gas 
+                                    turbine and jet <mark class="highlight">engines</mark>. To increase the 
+                                    efficiency of this process, compressors can 
+                                    be added <mark class="highlight">repurpose lost heat</mark>.
+                                </p>
+                                <p>
+                                    The goal of the thermodynamic simulation was
+                                    to find the limit of efficiency as the 
+                                    number of compressors approaches 
+                                    infinity. At the end of the investigation it 
+                                    was determined that the <a href="https://en.wikipedia.org/wiki/Ericsson_cycle" class="link">Ericsson Cycle</a> is
+                                    approached in this limit, which exhibits 
+                                    Carnot efficiency (maximum efficiency)!
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+            <div id="projects" class="fade-in fade-in-up">
+                <div class="left" id="projects-left">
+                    <div id="projects-links-container">
+                        <div id="projects-links">
+                            <div class="link-icons-container">
+                                <a href="https://github.com/graysonk546/skateboarder-lagrangian-mechanics">
+                                    <div class="link-icon" id="github">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="./documents/lm-skateboarding.pdf">
+                                    <div class="link-icon" id="mail">
+                                        <ion-icon name="document-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCin1Jl61J4hWm51TLP9yH7Q">
+                                    <div class="link-icon" id="video">
+                                        <ion-icon name="videocam-outline"></ion-icon>
+                                    </div>
+                                </a>
+                                <div class="link-icon" id="blank">
+                                    <p>
+                                        <a href="https://jupyter.org/" class="link text tech-font">Jupyter</a><br>
+                                        <a href="https://www.python.org/" class="link text tech-font">Python</a><br>
+                                        <a href="https://scipy.org/" class="link text tech-font">SciPy</a><br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vertical-line">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="project-container" id="ml-driving">
+                        <div class="project-description">
+                            <div class="project-title">
+                                <h2> Skateboarding with LM </h2>
+                            </div>
+                            <div class="project-content">
+                                <p>
+                                    The goal of this <mark class="highlight">physics</mark> simulation was to  
+                                    <mark class="highlight">model</mark> the periodic behaviour of a           
+                                    skateboarder riding a <a href="https://en.wikipedia.org/wiki/Half-pipe" class="link">half-pipe</a>. Of         
+                                    particular interest was precise pumping     
+                                    motion required to <mark class="highlight">minimize</mark> the time taken  
+                                    to reach the top of the 
+                                    ramp.
+                                </p>
+                                <p>
+                                    To model the situation, a skateboarder on a
+                                    ramp was <mark class="highlight">approximated</mark> by a <mark class="highlight">mass-spring 
+                                    system</mark> traversing a semi-circular path. 
+                                    Lagrangian Mechanics (<a href="https://en.wikipedia.org/wiki/Lagrangian_mechanics" class="link">LM</a>),
+                                    a formulation of classical mechanics, was 
+                                    used to characterize the motion of the system and 
+                                    Python was used to investigate and visualize it.                 
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="project-media">
+                            <img id="enph353-pic" src="pictures/lm-skate.gif">
+                        </div> 
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+        </section>
 
-        <!-----------------------------PROJECTS-------------------------------->
+        <!------------------------EXPERIENCE SECTION--------------------------->
+        <section id="experience-section">
+            <div class="section-title fade-in">
+                <h1>Experience</h1>
+                <div class="horizontal-line">
+                </div>
+            </div>
+            <div class="experience fade-in fade-in-up">
+                <div class="left">
+                </div>
+                <div class="center">
+                    <div class="experience-content">
+                        <div class="experience-info">
+                            <h2>Intel</h2>
+                            <p>
+                                <br>
+                                SW Dev Intern<br>
+                                Vancouver, BC, Canada<br>
+                                May 2022 - Present<br>
+                            </p>
+                        </div>
+                        <div class="experience-description">
+                            <!-- content here -->
+                            <ul class="experience-description-list">
+                                <li>
+                                    Working on a validation team, developing a 
+                                    complete embedded test platform for new 
+                                    memory devices.
+                                </li>
+                                <li>
+                                    Currently using Linux socket programming in 
+                                    C to handle wireless communication to the 
+                                    tester.
+                                </li>
+                            </ul>
+                            <p>
+                                <br>
+                                <mark class="tech-font link">Technologies: C, Python, Linux</mark>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+            <div class="experience fade-in fade-in-up">
+                <div class="left">
+                </div>
+                <div class="center">
+                    <div class="experience-content">
+                        <div class="experience-info">
+                            <h2>Generac</h2>
+                            <p>
+                                <br>
+                                FW Dev Intern<br>
+                                Vancouver, BC, Canada<br>
+                                January - May 2021<br>
+                            </p>
+                        </div>
+                        <div class="experience-description">
+                            <!-- content here -->
+                            <ul class="experience-description-list">
+                                <li>
+                                    Implemented new CI testing paradigm for $1M+
+                                    suite of clean energy management devices.
+                                </li>
+                                <li>
+                                    Built-up drivers for temperature sensor 
+                                    peripheral to detect device overheating 
+                                    conditions.
+                                </li>
+                            </ul>
+                            <p>
+                                <br>
+                                <mark class="tech-font link">Technologies: C, Python, ST Microcontrollers, FreeRTOS</mark>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </div>
+        </section>       
+
+        <!--------------------------CONTACT SECTION---------------------------->
+        <section id="contact-section">
+            <div class="section-title fade-in">
+                <h1>Contact</h1>
+                <div class="horizontal-line">
+                </div>
+            </div>
+            <section id="contact" class="fade-in fade-in-up">
+                <div class="left">
+                </div>
+                <div class="center">
+                    <div id="contact-content">
+                        <p>
+                            <mark class="highlight">Thank you</mark> for taking the time to read through my 
+                            site! If you have any questions about any of my
+                            projects, work experience, or if you would like
+                            to discuss <mark class="highlight">internship</mark> recruitment, please feel free 
+                            to <mark class="highlight">shoot me a message</mark> on <a href="https://www.linkedin.com/feed/" class="link">Linkedin</a> or an email at 
+                            graysonk546@gmail.com. Last update made on August 20th, 
+                            2022 ☺.
+                        </p>
+                        <p id="contact-link">
+                            <!-- <mark class="tech-font link">Grayson King</mark><br> -->
+                            <br>
+                            <mark class="tech-font link">graysonk546@gmail.com • (604) 500-2485</mark><br>
+                            <!-- <mark class="tech-font link">graysonk546@gmail.com</mark><br>
+                            <mark class="tech-font link">(604) 500-2485</mark><br> -->
+                            <mark class="tech-font link">3333 Wesbrook Mall</mark><br>
+                            <mark class="tech-font link">Vancouver BC V6S 0E3</mark><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+                </div>
+            </section>
+        </section>
+
+        <section id="trademark-section">
+            <div class="horizontal-line trademark">
+            </div>
+            <p class="tech-font">
+                website built from <a href="https://github.com/graysonk546/website" class="link tech-font">scratch</a> 
+                by <mark class="highlight tech-font">me</mark>
+            </p>
+            <div class="horizontal-line trademark">
+            </div>
+        </section>
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
+        <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+        <script src="app.js"></script>
 
     </body>
-
 </html>
 
 

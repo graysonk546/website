@@ -1,0 +1,88 @@
+
+#experience-section
+{
+    scroll-margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 400px;
+}
+
+.experience
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+
+.experience-content
+{
+    /* width: 100%; */
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience-info
+{
+    flex: 5;
+    background-color: #202737;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    box-shadow: 0px 0px 20px #000000;
+    min-width: 220px;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.experience-info h2
+{
+    font-size: 30px;
+    color: #fff;
+    background-color: #202737;
+}
+
+.experience-info p
+{
+    color: #abb2bf;
+    background-color: #202737;
+}
+
+.experience-description
+{
+    flex: 14;
+    background-color: #202737;
+    box-shadow: 0px 0px 20px #000000;
+    border-radius: 8px;
+    margin-left: 30px;
+    padding: 20px;
+    margin-right: 20px;
+    min-width: 530px;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+
+.experience-description p
+{
+    background-color: #202737;
+    color: #abb2bf;
+}
+
+.experience-description li
+{
+    background-color: #202737;
+    color: #abb2bf;
+}
+
+
+.experience-description-list
+{
+    margin-left: 20px;
+    list-style-type: disc;
+}
