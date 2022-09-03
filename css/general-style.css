@@ -4,24 +4,48 @@
     margin: 0;
     padding: 0;
     font-family: 'lato';
-    background-color: #282c34;
+    background-color: var(--background-colour);
+}
+
+/* variables general to all sections styles */
+:root
+{
+    --section-scroll-margin: 150px;
+    /* colour palette */
+    --background-colour: #282c34;
+    --title-text-colour: #fff;
+    --main-text-colour: #abb2bf;
+    --highlight-text-colour: #56b6c2;
+    --link-text-colour: #d19a66;
+    /* font sizing */
+    --cover-h1-font-size: 100px;
+    --cover-h2-font-size: 20px;
+    --cover-p-font-size: 20px;
+    --section-h1-font-size: 50px;
+    --title-h2-font-size: 30px;
+    --content-font-size: 16px;
+    --icon-font-size: 28px;
+    /* page spacing */
+    --left: 22.5;
+    --right: 22.5;
+    --center: 55;
 }
 
 .left
 {
-    flex: 22.5;
+    flex: var(--left);
     display:flex;
 }
 
 .right
 {
-    flex: 22.5;
+    flex: var(--right);
     display: flex;
 }
 
 .center
 {
-    flex: 55;
+    flex: var(--center);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

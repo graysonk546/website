@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     height: fit-content;
     margin-bottom: 400px;
-    scroll-margin-top: 250px;
+    scroll-margin-top: var(--section-scroll-margin);
 }
 
 #intro-content-container
@@ -18,9 +18,7 @@
     height: 300px;
     justify-content: center;
     width: fit-content;
-    /* background-color: pink; */
-    /* padding: 40px; */
-    margin-left: 40px;
+    padding: 40px;
 }
 
 #intro-content-container h1
@@ -56,9 +54,6 @@
 {
     flex: 2;
     height: 450px;
-    /* background-color: lightgrey; */
-    /* padding: 20px; */
-    /* margin-left: 20px; */
     margin-right: 20px;
     margin-bottom: 20px;
     display: flex;
@@ -67,7 +62,6 @@
     border-radius: 8px;
     max-width: 450px;
     min-width: 390px;
-    /* margin-left: 40px; */
 }
 
 #about-description
@@ -90,11 +84,10 @@
 
 #about-title
 {
-    scroll-margin-top: 250px;
+    scroll-margin-top: var(--section-scroll-margin);
     flex: 1;
     margin-left: 40px;
     margin-bottom: 20px;
-    /* padding: 20px; */
 }
 
 #about-title h2
@@ -109,12 +102,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-left: 40px; */
     min-width: 275px;
     max-width: 300px;
     min-height: 300px;
-    /* margin-top: 20px; */
-    /* background-color: lightblue; */
 }
 
 .image
@@ -130,7 +120,6 @@
     margin-top: 250px;
     margin-bottom: 75px;
     margin-left: auto;
-    /* margin-right: 40px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -142,7 +131,6 @@
     top: 330px;
     width: 100px;
     height: 300px;
-    /* background-color: black; */
     display: flex;
     flex-direction: row;
     align-items: center;
