@@ -48,7 +48,7 @@
 
 #video:hover
 {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     color: #56b6c2;
 }
 
@@ -62,7 +62,7 @@
 
 #onshape:hover
 {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     color: #56b6c2;
 }
 

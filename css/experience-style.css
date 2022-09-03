@@ -41,8 +41,41 @@
     margin-bottom: 20px;
 }
 
+.experience-name
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #202737;
+    align-items: center;
+}
+
+.experience-icon
+{
+    font-size: 28px;
+    color: #fff;
+    margin-left: 10px;
+    background-color: #202737; 
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-delay: initial;
+    transition-property: all;
+    background-color: #202737;
+}
+
+.experience-link-background
+{
+    background-color: #202737;
+}
+
+.experience-icon:hover
+{
+    transform: translateY(-4px);
+    color: #56b6c2;
+}
+
 .experience-info h2
 {
+    flex: 1;
     font-size: 30px;
     color: #fff;
     background-color: #202737;
